@@ -1,0 +1,51 @@
+{
+  "name": "tineapp",
+  "version": "0.1.0",
+  "description": "世界构建辅助工具 — visualize characters and events on interactive timelines with relationship graphs for large-scale worldview design",
+  "type": "module",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:3000 && tsc -p electron/tsconfig.json && VITE_DEV_SERVER_URL=http://localhost:3000 electron .\"",
+    "electron:prebuild": "vite build && tsc -p electron/tsconfig.json && node scripts/prebuild.cjs",
+    "electron:build": "npm run electron:prebuild && set CSC_IDENTITY_AUTO_DISCOVERY=false && npx electron-builder --win nsis --config.electronDist=release/electron-dist",
+    "electron:preview": "vite build && tsc -p electron/tsconfig.json && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "timeline",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@knight-lab/timelinejs": "^3.9.13",
+    "chronologyjs": "^4.0.1",
+    "d3": "^7.9.0",
+    "toml": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/node": "^26.1.2",
+    "@types/timelinejs3": "^3.4.7",
+    "concurrently": "^10.0.4",
+    "electron": "^43.3.0",
+    "electron-builder": "^26.15.3",
+    "less": "^4.8.1",
+    "tsx": "^4.23.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.0",
+    "wait-on": "^9.1.0"
+  }
+}

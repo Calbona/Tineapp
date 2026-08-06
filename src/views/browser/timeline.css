@@ -1,0 +1,142 @@
+/* ===== 修复 TimelineJS 图标字体路径 ===== */
+@font-face {
+	font-family: 'tl-icons';
+	src: url('/css/icons/tl-icons.eot');
+	src: url('/css/icons/tl-icons.eot?#iefix') format('embedded-opentype'),
+	     url('/css/icons/tl-icons.ttf') format('truetype'),
+	     url('/css/icons/tl-icons.woff2') format('woff2'),
+	     url('/css/icons/tl-icons.woff') format('woff'),
+	     url('/css/icons/tl-icons.svg#tl-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ===== 世界选择栏 ===== */
+.tl-world-bar {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 16px;
+	padding: 12px 16px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+}
+
+.tl-world-label { font-size: 0.85rem; color: #888; white-space: nowrap; }
+
+.tl-world-select {
+	flex: 1;
+	padding: 8px 12px;
+	font-size: 0.95rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #fff;
+	color: #333;
+	outline: none;
+	cursor: pointer;
+}
+.tl-world-select:focus { border-color: #888; }
+
+.tl-event-count { font-size: 0.82rem; color: #aaa; white-space: nowrap; }
+
+/* ===== TimelineJS 容器 ===== */
+.tl-embed {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	min-height: 500px;
+	overflow: hidden;
+}
+
+/* ===== 幻灯片样式覆写 ===== */
+
+/* 1. 隐藏 TimelineJS 自动添加的时间 */
+.tl-slide .tl-headline-date,           /* 幻灯片内日期 */
+.tl-slidenav-previous .tl-slidenav-title,   /* 左切换按钮下方标题 */
+.tl-slidenav-previous .tl-slidenav-description,
+.tl-slidenav-next .tl-slidenav-title,       /* 右切换按钮下方标题 */
+.tl-slidenav-next .tl-slidenav-description {
+	display: none !important;
+}
+
+/* 2. 全色背景幻灯片 — 实色遮罩铺满整个内容区（与页面底色融为一体） */
+.tl-slide.tl-full-color-background .tl-slide-content-container {
+	background: #fff !important;
+}
+
+/* 3. 标题（描述）— 最大字 */
+.tl-slide.tl-full-color-background .tl-text h2.tl-headline {
+	color: #111 !important;
+	font-size: 1.4rem !important;
+	font-weight: 600 !important;
+	line-height: 1.5 !important;
+	margin-bottom: 10px !important;
+	text-shadow: none !important;
+}
+
+/* 4. 元数据行（时间 / 来源 / 类型）— 小字 */
+.tl-slide.tl-full-color-background .tl-slide-content-container .tl-slide-content .tl-text {
+	color: #555 !important;
+	font-size: 0.85rem !important;
+	line-height: 1.7 !important;
+	text-shadow: none !important;
+}
+
+/* 去掉文字内容区自带的 padding，由父级遮罩统一控制 */
+.tl-slide.tl-full-color-background .tl-text .tl-text-content-container {
+	background: transparent !important;
+	padding: 16px 20px !important;
+}
+
+/* 深色模式 */
+:root[data-theme="dark"] .tl-slide.tl-full-color-background .tl-slide-content-container {
+	background: #2a2a2a !important;
+}
+:root[data-theme="dark"] .tl-slide.tl-full-color-background .tl-text h2.tl-headline {
+	color: #fff !important;
+}
+:root[data-theme="dark"] .tl-slide.tl-full-color-background .tl-slide-content-container .tl-slide-content .tl-text {
+	color: #ccc !important;
+}
+
+/* system 模式跟随深色 */
+@media (prefers-color-scheme: dark) {
+	:root[data-theme="system"] .tl-slide.tl-full-color-background .tl-slide-content-container {
+		background: #2a2a2a !important;
+	}
+	:root[data-theme="system"] .tl-slide.tl-full-color-background .tl-text h2.tl-headline {
+		color: #fff !important;
+	}
+	:root[data-theme="system"] .tl-slide.tl-full-color-background .tl-slide-content-container .tl-slide-content .tl-text {
+		color: #ccc !important;
+	}
+}
+
+/* ===== 状态 ===== */
+.tl-loading, .tl-empty, .tl-error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	font-size: 0.9rem;
+	color: #bbb;
+}
+.tl-error { color: #c66; }
+
+/* ===== 深色模式 — 世界选择栏 ===== */
+:root[data-theme="dark"] .tl-world-bar { background: #2a2a2a; border-color: #444; }
+:root[data-theme="dark"] .tl-world-select { background: #1e1e1e; border-color: #444; color: #e0e0e0; }
+:root[data-theme="dark"] .tl-world-label { color: #888; }
+:root[data-theme="dark"] .tl-event-count { color: #777; }
+:root[data-theme="dark"] .tl-embed { background: #2a2a2a; border-color: #444; }
+:root[data-theme="dark"] .tl-loading { color: #666; }
+
+@media (prefers-color-scheme: dark) {
+	:root[data-theme="system"] .tl-world-bar { background: #2a2a2a; border-color: #444; }
+	:root[data-theme="system"] .tl-world-select { background: #1e1e1e; border-color: #444; color: #e0e0e0; }
+	:root[data-theme="system"] .tl-world-label { color: #888; }
+	:root[data-theme="system"] .tl-event-count { color: #777; }
+	:root[data-theme="system"] .tl-embed { background: #2a2a2a; border-color: #444; }
+	:root[data-theme="system"] .tl-loading { color: #666; }
+}

@@ -1,0 +1,113 @@
+/* ===== 世界选择栏 ===== */
+.ch-world-bar {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 16px;
+	padding: 12px 16px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+}
+
+.ch-world-label { font-size: 0.85rem; color: #888; white-space: nowrap; }
+
+.ch-world-select {
+	flex: 1;
+	padding: 8px 12px;
+	font-size: 0.95rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #fff;
+	color: #333;
+	outline: none;
+	cursor: pointer;
+}
+.ch-world-select:focus { border-color: #888; }
+
+.ch-event-count { font-size: 0.82rem; color: #aaa; white-space: nowrap; }
+
+/* ===== 表格区域 ===== */
+.ch-content {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	padding: 20px;
+	min-height: 300px;
+}
+
+.ch-table-wrap { overflow-x: auto; }
+
+.ch-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.88rem;
+}
+
+.ch-table th {
+	text-align: left;
+	padding: 10px 14px;
+	font-size: 0.78rem;
+	font-weight: 500;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border-bottom: 2px solid #eee;
+	white-space: nowrap;
+}
+
+.ch-table td {
+	padding: 10px 14px;
+	border-bottom: 1px solid #f0f0f0;
+	vertical-align: top;
+}
+
+.ch-table tbody tr:hover { background: #fafafa; }
+
+.ch-cell-time { white-space: nowrap; color: #666; font-size: 0.84rem; min-width: 140px; }
+.ch-cell-src { min-width: 80px; }
+
+.ch-src-world { color: #4e79a7; font-weight: 500; }
+.ch-src-char { color: #e15759; font-weight: 500; }
+
+.ch-cell-type { color: #999; font-size: 0.8rem; white-space: nowrap; }
+.ch-cell-desc { color: #333; line-height: 1.5; }
+
+/* ===== 状态 ===== */
+.ch-loading, .ch-empty, .ch-error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	font-size: 0.9rem;
+	color: #bbb;
+}
+.ch-error { color: #c66; }
+
+/* ===== 深色 ===== */
+:root[data-theme="dark"] .ch-world-bar,
+:root[data-theme="dark"] .ch-content { background: #2a2a2a; border-color: #444; }
+:root[data-theme="dark"] .ch-world-select { background: #1e1e1e; border-color: #444; color: #e0e0e0; }
+:root[data-theme="dark"] .ch-world-label { color: #888; }
+:root[data-theme="dark"] .ch-event-count { color: #777; }
+:root[data-theme="dark"] .ch-table th { color: #888; border-color: #3a3a3a; }
+:root[data-theme="dark"] .ch-table td { border-color: #333; }
+:root[data-theme="dark"] .ch-table tbody tr:hover { background: #252525; }
+:root[data-theme="dark"] .ch-cell-time { color: #999; }
+:root[data-theme="dark"] .ch-cell-desc { color: #ccc; }
+:root[data-theme="dark"] .ch-cell-type { color: #888; }
+:root[data-theme="dark"] .ch-loading, :root[data-theme="dark"] .ch-empty { color: #666; }
+
+@media (prefers-color-scheme: dark) {
+	:root[data-theme="system"] .ch-world-bar,
+	:root[data-theme="system"] .ch-content { background: #2a2a2a; border-color: #444; }
+	:root[data-theme="system"] .ch-world-select { background: #1e1e1e; border-color: #444; color: #e0e0e0; }
+	:root[data-theme="system"] .ch-world-label { color: #888; }
+	:root[data-theme="system"] .ch-event-count { color: #777; }
+	:root[data-theme="system"] .ch-table th { color: #888; border-color: #3a3a3a; }
+	:root[data-theme="system"] .ch-table td { border-color: #333; }
+	:root[data-theme="system"] .ch-table tbody tr:hover { background: #252525; }
+	:root[data-theme="system"] .ch-cell-time { color: #999; }
+	:root[data-theme="system"] .ch-cell-desc { color: #ccc; }
+	:root[data-theme="system"] .ch-cell-type { color: #888; }
+}
