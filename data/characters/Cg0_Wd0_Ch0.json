@@ -1,0 +1,12 @@
+{
+    "id": "Cg0_Wd0_Ch0",
+    "name": "示例角色 1",
+    "gender": 1,
+    "nationality": [
+        { "value": null, "span": { "start": { "unit0": 970 }, "type": 0, "end": { "unit0": 995 } } },
+        { "value": "Cg0_Wd0_Rm0", "span": { "start": { "unit0": 995 }, "type": 0, "end": { "unit0": 1013 } } }
+    ],
+    "properties": [
+        { "value": [ { "key": "示例角色 1 的属性 1", "value": "示例角色 1 属性 1 的值" } ], "span": { "start": { "unit0": 970 }, "type": 2 } }
+    ]
+}

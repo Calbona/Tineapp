@@ -1,0 +1,5 @@
+{
+    "id": "Cg0_Wd0_Rg0",
+    "name": "示例城镇 1",
+    "territories": [ { "value": ["0,400,1000,599"], "span": { "start": { "unit0": -999 }, "type": 3 } } ]
+}

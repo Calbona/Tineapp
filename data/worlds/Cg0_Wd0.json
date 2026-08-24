@@ -1,0 +1,6 @@
+{
+    "id": "Cg0_Wd0",
+    "name": "示例世界 1",
+    "properties": [ { "key": "示例世界 1 的属性 1", "value": 100 } ],
+    "mapscale": [1000, 600]
+}

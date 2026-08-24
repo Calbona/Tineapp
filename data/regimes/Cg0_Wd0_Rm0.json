@@ -1,0 +1,14 @@
+{
+    "id": "Cg0_Wd0_Rm0",
+    "name": "示例王国 1",
+    "type": 3,
+    "head": [
+        { "value": "Cg0_Wd0_Ch0", "span": { "start": { "unit0": 995 }, "type": 0, "end": { "unit0": 1013 } } },
+        { "value": "Cg0_Wd0_Ch1", "span": { "start": { "unit0": 1013 }, "type": 0, "end": { "unit0": 1072 } } },
+        { "value": null, "span": { "start": { "unit0": 1072 }, "type": 3 } }
+    ],
+    "territories": [
+        { "value": ["200,150,649,300"], "span": { "start": { "unit0": 995 }, "type": 0, "end": { "unit0": 1060 } } },
+        { "value": ["150,150,999,400"], "span": { "start": { "unit0": 1060 }, "type": 3 } }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "Cg0_Wd0_Og0",
+    "name": "示例组织 1",
+    "type": 0,
+    "head": [
+        { "value": "Cg0_Wd0_Ch0", "span": { "start": { "unit0": 1010 }, "type": 0, "end": { "unit0": 1013 } } },
+        { "value": "Cg0_Wd0_Ch1", "span": { "start": { "unit0": 1013 }, "type": 0, "end": { "unit0": 1072 } } },
+        { "value": null, "span": { "start": { "unit0": 1072 }, "type": 3 } }
+    ],
+    "properties": [
+        { "value": [ { "key": "示例组织 1 的属性 1", "value": "Cg0_Wd0_Rg0" } ], "span": { "start": { "unit0": 1010 }, "type": 3 } }
+    ]
+}

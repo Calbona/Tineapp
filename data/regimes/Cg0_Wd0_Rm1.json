@@ -1,0 +1,7 @@
+{
+    "id": "Cg0_Wd0_Rm1",
+    "name": "示例部落 1",
+    "type": 2,
+    "head": [ { "value": null, "span": { "start": { "unit0": 990 }, "type": 3 } } ],
+    "territories": [ { "value": ["0,0,199,149"], "span": { "start": { "unit0": 990 }, "type": 3 } } ]
+}

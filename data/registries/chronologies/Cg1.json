@@ -1,0 +1,18 @@
+{
+    "id": "Cg1",
+    "chronology": "默认历法副本",
+    "unit0": {
+        "name": "year", "initial": -999,
+        "priority1": { "condition": 0, "subunit": 0 }, "default": 12
+    },
+    "unit1": {
+        "name": "month",
+        "initial": 1,
+        "priority1": { "condition": "(unit1 === 2) && ((unit0 % 400 === 0) || ((unit0 % 4 === 0) && (unit0 % 100 !== 0)))", "subunit": 29 },
+        "priority2": { "condition": 2, "subunit": 28 },
+        "priority3": { "condition": [4, 6, 9, 11], "subunit": 30 },
+        "default": 31
+    },
+    "unit2": { "name": "day", "initial": 1, "default": 24 },
+    "unit3": { "initial": 0, "name": "hour" }
+}

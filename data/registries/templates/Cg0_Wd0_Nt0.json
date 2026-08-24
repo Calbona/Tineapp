@@ -1,0 +1,8 @@
+{
+    "id": "Cg0_Wd0_Nt0",
+    "name": "宝物",
+    "properties": [
+        { "key": "材质", "value": "string" },
+        { "key": "持有者", "value": "id" }
+    ]
+}

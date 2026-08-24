@@ -1,0 +1,21 @@
+[appearance]
+
+m = 0
+
+[language]
+
+l = 'zh_CN'
+
+[verify]
+
+T = 45
+
+[palette]
+
+RmNum = 8
+RmArray = ['#ffb0b0','#ffd1b0','#ffeeb0','#ffffb0','#baffb0','#b0ffed','#b0ddff','#b0c4ff']
+
+[mod]
+
+installed = ['Calendar', 'StarMap']
+enabled = ['Calendar', 'StarMap']

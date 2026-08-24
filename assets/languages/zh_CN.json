@@ -1,0 +1,17 @@
+{
+    "app": {
+        "title": "Tineapp",
+        "components": {
+            "bt-bc": "批量管理"
+        }
+    },
+    "home": {
+        "newWorld": "创建世界",
+        "setting": "设置"
+    },
+    "cg-list-edit": {
+        "title": "历法  列表编辑模式",
+        "new": "新建历法",
+        "import": "导入历法"
+    }
+}

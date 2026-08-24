@@ -1,0 +1,8 @@
+{
+    "id": "Cg0_Wd0_Nt0_Ne0",
+    "name": "示例宝物 1",
+    "properties": [
+        { "value": [ { "key": "材质", "value": "示例材质" }, { "key": "持有者", "value": "Cg0_Wd0_Ch0" } ],
+          "span": { "start": { "unit0": -999 }, "type": 3 } }
+    ]
+}

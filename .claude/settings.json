@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Move|Delete",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -lc 'f=\"$CLAUDE_FILE_PATH\"; case \"$f\" in harness/*|./harness/*|$PWD/harness/*) echo \"BLOCKED: harness/ is read-only source-of-truth, do not modify.\" >&2; exit 2;; esac; exit 0'"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/anthropics/claude-plugins-official.git"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "id": "Cg0_Wd0_Er0",
+    "name": "示例时期 1",
+    "properties": [ { "key": "示例时期的属性 1", "value": "示例时期属性 1 的值" } ],
+    "span": { "start": { "unit0": 968, "unit1": 1, "unit2": 1 }, "type": 0, "end": { "unit0": 1120, "unit1": 1, "unit2": 1 } }
+}
