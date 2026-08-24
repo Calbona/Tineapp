@@ -1,6 +1,6 @@
 {
   "name": "tineapp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "面向大型虚拟世界观创作者，用于数据记录、修改、迁移与可视化的桌面应用",
   "private": true,
   "main": "out/main/index.js",
