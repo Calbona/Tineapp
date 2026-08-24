@@ -1,7 +1,0 @@
-{
-	"id": "B",
-	"name": {"zh_CN": "组织B", "en_US": "Organization B"},
-	"time": {"year": -60, "month": 3},
-	"endTime": {"year": 8},
-	"tags": ["示例"]
-}
