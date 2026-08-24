@@ -1,0 +1,37 @@
+{
+	"world": 0,
+	"id": 2,
+	"name": {"zh_CN": "张五", "en_US": "Peter", "or_OR": "#^%$^%"},
+	"properties": {
+		"sexual": "其他",
+		"MagicAdaptability": "风"
+	},
+	"events": [
+		{
+			"time": {"year": -89, "month": 3, "day": 5},
+			"endType": "instant",
+			"describe": "张五出生了。"
+		},
+		{
+			"time": {"year": -89, "month": 3, "day": 6},
+			"endType": "lifelong",
+			"describe": "从魔法宝石中汲取不死力量。"
+		}
+	],
+	"relationships": [
+		{
+			"target": 0,
+			"time": {"year": -89, "month": 3, "day": 5},
+			"endTime": {"year": -40, "month": 2},
+			"type": "child",
+			"describe": "作为孩子"
+		},
+		{
+			"target": 1,
+			"time": {"year": -89, "month": 3, "day": 5},
+			"endTime": {"year": -43, "month": 7, "day": 30},
+			"type": "child",
+			"describe": "作为孩子"
+		}
+	]
+}

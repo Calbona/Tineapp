@@ -1,0 +1,85 @@
+/* ===== 实体列表 ===== */
+.entity-list {
+	margin-bottom: 12px;
+}
+
+.entity-row {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 0;
+}
+
+.entity-row .text-input {
+	font-size: 0.82rem;
+	padding: 5px 8px;
+}
+
+.entity-row .form-select {
+	font-size: 0.82rem;
+	padding: 5px 8px;
+}
+
+.entity-sub {
+	margin: 4px 0 8px 20px;
+	padding: 8px 12px;
+	background: #f9f9f9;
+	border-radius: 6px;
+	border: 1px solid #eee;
+}
+
+.entity-summary {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-top: 8px;
+}
+
+.entity-badge {
+	font-size: 0.78rem;
+	padding: 3px 10px;
+	background: #eef;
+	border-radius: 12px;
+	color: #558;
+}
+
+/* ===== 数据库行 ===== */
+.db-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.db-world-name {
+	font-size: 0.95rem;
+	font-weight: 500;
+	flex: 1;
+}
+
+.db-world-meta {
+	font-size: 0.78rem;
+	color: #aaa;
+}
+
+/* ===== 深色 ===== */
+:root[data-theme="dark"] .entity-sub {
+	background: #222;
+	border-color: #333;
+}
+:root[data-theme="dark"] .entity-badge {
+	background: #334;
+	color: #aac;
+}
+:root[data-theme="dark"] .db-row {
+	border-color: #333;
+}
+:root[data-theme="dark"] .db-world-meta { color: #777; }
+
+@media (prefers-color-scheme: dark) {
+	:root[data-theme="system"] .entity-sub { background: #222; border-color: #333; }
+	:root[data-theme="system"] .entity-badge { background: #334; color: #aac; }
+	:root[data-theme="system"] .db-row { border-color: #333; }
+	:root[data-theme="system"] .db-world-meta { color: #777; }
+}
